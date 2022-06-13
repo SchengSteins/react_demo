@@ -1,0 +1,20 @@
+import Bar from '@/components/Bar';
+import './index.scss';
+
+export default function Home() {
+  return (
+    <div>
+      <Bar
+        style={{ width: '500px', height: '400px' }}
+        xData={['vue', 'angular', 'react']}
+        yData={[50, 60, 70]}
+        title='三大框架满意度' />
+
+      <Bar
+        style={{ width: '200px', height: '200px' }}
+        xData={['vue', 'angular', 'react']}
+        yData={[50, 60, 70]}
+        title='三大框架使用度2' />
+    </div >
+  )
+}
